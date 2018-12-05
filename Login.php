@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <?php
-  $bdhost = '192.168.0.6';
+  $dbhost = 'sql300.epizy.com';
   $username = 'epiz_23108305';
   $password = 'pxU0H40M1Q9JKR';
-  $db = 'epiz_23108305';
+  $db = 'epiz_23108305_RUFit';
 
-  $connection = mysqli_connect($hbhost, $username, $password,$db)
+  $connection = mysqli_connect($dbhost, $username, $password,$db)
    or die("Connect failed");
 
-   $query = "select * from Users";
+   $query = "select * from User";
    mysqli_query($connection, $query) or die ('Error querying database.');
    $result = mysqli_query($connection, $query);
    $row = mysqli_fetch_array($result);
