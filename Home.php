@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RU Fit Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center" style=background-color:rgb(194,1,27)>
+  <h1>RU Fit</h1>
+
+</div>
+<ul class="nav nav-pills nav-stacked text-center">
+  <li role="presentation" class="active"><a href="#">Workout</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Exercises</a></li>
+</ul>
+
+<div class="container">
+  <div class="col-sm-4 col-centered">
+  </div>
+    <div class="col-sm-4 col-centered">
+      <h3 class= "text-center">Workout</h3>
+      <p class= "text-center">Exercise Example 1</p>
+      <p class= "text-center">Exercise Example 2</p>
+      <button type="button" class="btn btn-primary btn-lg btn-block">+ Add Exercise</button>
+    </div>
+    <div class="col-sm-4 col-centered">
+    </div>
+  </div>
+
+
+</body>
+</html>
