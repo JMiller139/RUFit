@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <?php
-  $bdhost = "sql300.epizy.com";
-  $username = "epiz_23108305";
-  $password = "pxU0H40M1Q9JKR";
-  $db = "RUFit";
+  $bdhost = '192.168.0.6';
+  $username = 'epiz_23108305';
+  $password = 'pxU0H40M1Q9JKR';
+  $db = 'epiz_23108305';
 
   $connection = mysqli_connect($hbhost, $username, $password,$db)
-   or die("Connect failed: %s\n".$connection->error);
+   or die("Connect failed");
 
    $query = "select * from Users";
-   mysqli_query($connection, $query) or die ("Error querying database.");
+   mysqli_query($connection, $query) or die ('Error querying database.');
    $result = mysqli_query($connection, $query);
    $row = mysqli_fetch_array($result);
 
    while ($row = mysqli_fetch_array($result)){
-     echo $row["fname"] . " " . $row["lname"] . "<br />"
+     echo $row['fname'] . ' ' . $row['lname'] . '<br />';
    }
 
    mysqli_close($connection);
 ?>
 <html lang="en">
 <head>
-  <title>RU FIT Login</title>
+  <title>RU FIT Login</title>s
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
