@@ -2,7 +2,7 @@
 <?php
   $bdhost = "sql300.epizy.com";
   $username = "epiz_23108305";
-  $password = "tree123";
+  $password = "pxU0H40M1Q9JKR";
   $db = "RUFit";
 
   $connection = mysqli_connect($hbhost, $username, $password,$db)
